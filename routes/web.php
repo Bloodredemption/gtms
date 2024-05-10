@@ -27,25 +27,9 @@ Route::get('/dashboard', function () {
 Route::resource('users', UsersController::class)->middleware('auth');
 Route::put('users/{user}/update-password', [UsersController::class, 'updatePass'])->name('users.updatePass');
 
-Route::get('/residents', function () {
-    return view('admin.resident');
-})->name('admin.residents');
-
 Route::get('/drivers', function () {
-    return view('admin.driver');
+    return view('admin.driver_records.index');
 })->name('admin.drivers');
-
-Route::get('/baranggay', function () {
-    return view('admin.baranggay');
-})->name('admin.brgy');
-
-Route::get('/trucks', function () {
-    return view('admin.truck');
-})->name('admin.trucks');
-
-Route::get('/complaints', function () {
-    return view('admin.complaint');
-})->name('admin.complaints');
 
 Route::get('/register', [RegisterController::class, 'showRegistrationForm'])->name('register');
 Route::post('/register', [RegisterController::class, 'register']);

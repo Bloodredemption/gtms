@@ -6,40 +6,64 @@
           <span class="menu-title">Dashboard</span>
         </a>
       </li>
-      <li class="nav-item {{ request()->is('residents') ? 'active' : '' }}">
-        <a class="nav-link" href="{{ route('admin.residents') }}">
-          <i class="icon-paper menu-icon"></i>
-          <span class="menu-title">Resident Records</span>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="pages/documentation/documentation.html">
-          <i class="icon-paper menu-icon"></i>
-          <span class="menu-title">Complaints</span>
-        </a>
-      </li>
-      <li class="nav-item {{ request()->is('baranggay') ? 'active' : '' }}">
-        <a class="nav-link" href="{{ route('admin.brgy') }}">
-          <i class="icon-paper menu-icon"></i>
-          <span class="menu-title">Baranggay Records</span>
-        </a>
-      </li>
       <li class="nav-item {{ (str_starts_with(request()->path(), 'users')) ? 'active' : '' }}">
         <a class="nav-link" href="/users">
           <i class="icon-paper menu-icon"></i>
           <span class="menu-title">Users</span>
         </a>
       </li>
-      <li class="nav-item {{ request()->is('trucks') ? 'active' : '' }}">
-        <a class="nav-link" href="{{ route('admin.trucks') }}">
+      <li class="nav-item {{ (str_starts_with(request()->path(), 'driver')) ? 'active' : '' }}">
+        <a class="nav-link" href="/drivers">
           <i class="icon-paper menu-icon"></i>
-          <span class="menu-title">Garbage Truck Records</span>
+          <span class="menu-title">Driver</span>
         </a>
       </li>
-      <li class="nav-item {{ request()->is('drivers') ? 'active' : '' }}">
-        <a class="nav-link" href="{{ route('admin.drivers') }}">
+      <li class="nav-item">
+        <a class="nav-link" href="">
           <i class="icon-paper menu-icon"></i>
-          <span class="menu-title">Driver Records</span>
+          <span class="menu-title">Baranggay</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="">
+          <i class="icon-paper menu-icon"></i>
+          <span class="menu-title">Dump Truck</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="">
+          <i class="icon-paper menu-icon"></i>
+          <span class="menu-title">Truck Schedule</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="">
+          <i class="icon-paper menu-icon"></i>
+          <span class="menu-title">Type of Waste</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="">
+          <i class="icon-paper menu-icon"></i>
+          <span class="menu-title">Complaints</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="">
+          <i class="icon-paper menu-icon"></i>
+          <span class="menu-title">Announcement</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="">
+          <i class="icon-paper menu-icon"></i>
+          <span class="menu-title">SMS</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="">
+          <i class="icon-paper menu-icon"></i>
+          <span class="menu-title">Route</span>
         </a>
       </li>
     </ul>
