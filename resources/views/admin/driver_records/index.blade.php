@@ -62,7 +62,9 @@
                                             <td>May 11, 2024</td>
                                             <td>May 11, 2024</td>
                                             <td>User 1</td>
-                                            <td>Active</td>
+                                            <td>
+                                                <div class="badge badge-primary">Active</div>
+                                            </td>
                                             <td>May 11, 2024</td>
                                             <td>
                                                 <a href="" title="View" style="color: green;">

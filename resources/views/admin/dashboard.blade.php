@@ -52,8 +52,8 @@
           <div class="col-md-6 mb-4 stretch-card transparent">
             <div class="card card-tale">
               <div class="card-body">
-                <p class="mb-4">Today’s Bookings</p>
-                <p class="fs-30 mb-2">4006</p>
+                <p class="mb-4">Total Barangays</p>
+                <p class="fs-30 mb-2">99</p>
                 <p>10.00% (30 days)</p>
               </div>
             </div>
@@ -61,8 +61,8 @@
           <div class="col-md-6 mb-4 stretch-card transparent">
             <div class="card card-dark-blue">
               <div class="card-body">
-                <p class="mb-4">Total Bookings</p>
-                <p class="fs-30 mb-2">61344</p>
+                <p class="mb-4">Total Admins</p>
+                <p class="fs-30 mb-2">99</p>
                 <p>22.00% (30 days)</p>
               </div>
             </div>
@@ -72,8 +72,8 @@
           <div class="col-md-6 mb-4 mb-lg-0 stretch-card transparent">
             <div class="card card-light-blue">
               <div class="card-body">
-                <p class="mb-4">Number of Meetings</p>
-                <p class="fs-30 mb-2">34040</p>
+                <p class="mb-4">Number of Complaints</p>
+                <p class="fs-30 mb-2">99</p>
                 <p>2.00% (30 days)</p>
               </div>
             </div>
@@ -81,8 +81,8 @@
           <div class="col-md-6 stretch-card transparent">
             <div class="card card-light-danger">
               <div class="card-body">
-                <p class="mb-4">Number of Clients</p>
-                <p class="fs-30 mb-2">47033</p>
+                <p class="mb-4">Number of Residents</p>
+                <p class="fs-30 mb-2">99</p>
                 <p>0.22% (30 days)</p>
               </div>
             </div>
@@ -103,45 +103,30 @@
                 <thead>
                   <tr>
                     <th class="pl-0  pb-2 border-bottom">Baranggay</th>
-                    <th class="border-bottom pb-2">Orders</th>
-                    <th class="border-bottom pb-2">Users</th>
+                    <th class="border-bottom pb-2">Date/Time</th>
+                    <th class="border-bottom pb-2">Driver</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td class="pl-0">Kentucky</td>
-                    <td><p class="mb-0"><span class="font-weight-bold mr-2">65</span>(2.15%)</p></td>
-                    <td class="text-muted">65</td>
+                    <td class="pl-0">Brgy. 1</td>
+                    <td><p class="mb-0"><span class="font-weight-bold mr-2">May 11, 2024</span>8:00AM</p></td>
+                    <td class="text-muted">Driver 1</td>
                   </tr>
                   <tr>
-                    <td class="pl-0">Ohio</td>
-                    <td><p class="mb-0"><span class="font-weight-bold mr-2">54</span>(3.25%)</p></td>
-                    <td class="text-muted">51</td>
+                    <td class="pl-0">Brgy. 2</td>
+                    <td><p class="mb-0"><span class="font-weight-bold mr-2">May 11, 2024</span>8:00AM</p></td>
+                    <td class="text-muted">Driver 1</td>
                   </tr>
                   <tr>
-                    <td class="pl-0">Nevada</td>
-                    <td><p class="mb-0"><span class="font-weight-bold mr-2">22</span>(2.22%)</p></td>
-                    <td class="text-muted">32</td>
+                    <td class="pl-0">Brgy. 3</td>
+                    <td><p class="mb-0"><span class="font-weight-bold mr-2">May 11, 2024</span>8:00AM</p></td>
+                    <td class="text-muted">Driver 1</td>
                   </tr>
                   <tr>
-                    <td class="pl-0">North Carolina</td>
-                    <td><p class="mb-0"><span class="font-weight-bold mr-2">46</span>(3.27%)</p></td>
-                    <td class="text-muted">15</td>
-                  </tr>
-                  <tr>
-                    <td class="pl-0">Montana</td>
-                    <td><p class="mb-0"><span class="font-weight-bold mr-2">17</span>(1.25%)</p></td>
-                    <td class="text-muted">25</td>
-                  </tr>
-                  <tr>
-                    <td class="pl-0">Nevada</td>
-                    <td><p class="mb-0"><span class="font-weight-bold mr-2">52</span>(3.11%)</p></td>
-                    <td class="text-muted">71</td>
-                  </tr>
-                  <tr>
-                    <td class="pl-0 pb-0">Louisiana</td>
-                    <td class="pb-0"><p class="mb-0"><span class="font-weight-bold mr-2">25</span>(1.32%)</p></td>
-                    <td class="pb-0">14</td>
+                    <td class="pl-0">Brgy. 4</td>
+                    <td><p class="mb-0"><span class="font-weight-bold mr-2">May 11, 2024</span>8:00AM</p></td>
+                    <td class="text-muted">Driver 1</td>
                   </tr>
                 </tbody>
               </table>
@@ -153,55 +138,35 @@
       <div class="col-md-6 stretch-card grid-margin">
         <div class="card">
           <div class="card-body">
-            <p class="card-title">Notifications</p>
+            <p class="card-title">Complaints</p>
             <ul class="icon-data-list">
               <li>
                 <div class="d-flex">
-                  <img src="images/faces/face1.jpg" alt="user">
+                  <img src="{{ asset('images/faces/def_userimg.jpg') }}" alt="user">
                   <div>
-                    <p class="text-info mb-1">Isabella Becker</p>
-                    <p class="mb-0">Sales dashboard have been created</p>
-                    <small>9:30 am</small>
+                    <p class="text-info mb-1">Korin Kilaton (Brgy. 1)</p>
+                    <p class="mb-0">The garbage in brgy 1 has not been collected yet.</p>
+                    <small>May 11, 2024 | 9:30 am</small>
                   </div>
                 </div>
               </li>
               <li>
                 <div class="d-flex">
-                  <img src="images/faces/face2.jpg" alt="user">
+                  <img src="{{ asset('images/faces/def_userimg.jpg') }}" alt="user">
                   <div>
-                    <p class="text-info mb-1">Adam Warren</p>
-                    <p class="mb-0">You have done a great job #TW111</p>
-                    <small>10:30 am</small>
+                    <p class="text-info mb-1">Augustine Bhern A. Dumapias (Brgy. 2)</p>
+                    <p class="mb-0">The garbage in brgy 2 has not been collected yet.</p>
+                    <small>May 11, 2024 | 9:30 am</small>
                   </div>
                 </div>
               </li>
               <li>
                 <div class="d-flex">
-                <img src="images/faces/face3.jpg" alt="user">
-              <div>
-                <p class="text-info mb-1">Leonard Thornton</p>
-                <p class="mb-0">Sales dashboard have been created</p>
-                <small>11:30 am</small>
-              </div>
-                </div>
-              </li>
-              <li>
-                <div class="d-flex">
-                  <img src="images/faces/face4.jpg" alt="user">
+                  <img src="{{ asset('images/faces/def_userimg.jpg') }}" alt="user">
                   <div>
-                    <p class="text-info mb-1">George Morrison</p>
-                    <p class="mb-0">Sales dashboard have been created</p>
-                    <small>8:50 am</small>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="d-flex">
-                  <img src="images/faces/face5.jpg" alt="user">
-                  <div>
-                  <p class="text-info mb-1">Ryan Cortez</p>
-                  <p class="mb-0">Herbs are fun and easy to grow.</p>
-                  <small>9:00 am</small>
+                    <p class="text-info mb-1">EJ Lester B. Pimentel (Brgy. 3)</p>
+                    <p class="mb-0">The garbage in brgy 3 has not been collected yet.</p>
+                    <small>May 11, 2024 | 9:30 am</small>
                   </div>
                 </div>
               </li>

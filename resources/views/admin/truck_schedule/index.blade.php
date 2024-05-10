@@ -6,8 +6,8 @@
             <div class="col-md-12 mb-4">
                 <div class="row">
                     <div class="col-12 col-xl-8 mb-4 mb-xl-0">
-                        <h3 class="font-weight-bold">Dump Truck Records</h3>
-                        <h6 class="font-weight-normal mb-0">All dump trucks will be listed here.</h6>
+                        <h3 class="font-weight-bold">Truck Schedule</h3>
+                        <h6 class="font-weight-normal mb-0">All truck schedule will be listed here.</h6>
                     </div>
                     
                 </div>
@@ -20,7 +20,7 @@
                     <div class="card-body">
                         <div class="row align-items-center justify-content-between">
                             <div class="col-auto mb-3">
-                                <a class="btn btn-success" href="">Add New Truck</a>
+                                <a class="btn btn-success" href="">Add New Schedule</a>
                             </div>
                             <div class="col-auto mb-3">
                                 <div class="input-group">
@@ -42,23 +42,25 @@
                                     <table id="example" class="display expandable-table" style="width:100%">
                                         <thead>
                                             <tr>
-                                                <th>Brand</th>
-                                                <th>Model</th>
-                                                <th>Plate Number</th>
-                                                <th>Capacity</th>
+                                                <th>Truck</th>
+                                                <th>Driver</th>
+                                                <th>Baranggay</th>
+                                                <th>Date/Time</th>
                                                 <th>Status</th>
+                                                <th>Created by</th>
                                                 <th>Created at</th>
                                                 <th>Actions</th>
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <td>Sample Brand</td>
-                                            <td>Sample Model</td>
-                                            <td>124234234</td>
-                                            <td>100tb</td>
+                                            <td>Brand | Model</td>
+                                            <td>Driver 1</td>
+                                            <td>Brgy. 1</td>
+                                            <td>May 11, 2024</td>
                                             <td>
                                                 <div class="badge badge-primary">Active</div>
                                             </td>
+                                            <td>Korin Kilaton</td>
                                             <td>May 11, 2024</td>
                                             <td>
                                                 <a href="" title="View" style="color: green;">

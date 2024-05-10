@@ -15,7 +15,7 @@ class UsersController extends Controller
      */
     public function index(): View
     {
-        $users = User::paginate(5);
+        $users = User::paginate(2);
         return view('admin.users.index', compact('users'));
     }
 
@@ -77,7 +77,7 @@ class UsersController extends Controller
         $user->update($request->all());
 
         return redirect()->route('users.index')
-                        ->with('success','User updated successfully');
+                        ->with('success','User updated successfully.');
     }
 
     public function updatePass(Request $request, User $user): RedirectResponse
@@ -100,6 +100,6 @@ class UsersController extends Controller
         $user->delete();
 
         return redirect()->route('users.index')
-                        ->with('success','User deleted successfully');
+                        ->with('success','User deleted successfully.');
     }
 }

@@ -31,6 +31,38 @@ Route::get('/drivers', function () {
     return view('admin.driver_records.index');
 })->name('admin.drivers');
 
+Route::get('/baranggays', function () {
+    return view('admin.barangay_records.index');
+})->name('admin.baranggay');
+
+Route::get('/trucks', function () {
+    return view('admin.truck_records.index');
+})->name('admin.trucks');
+
+Route::get('/schedules', function () {
+    return view('admin.truck_schedule.index');
+})->name('admin.schedules');
+
+Route::get('/complaints', function () {
+    return view('admin.complaints.index');
+})->name('admin.complaints');
+
+Route::get('/announcements', function () {
+    return view('admin.announcements.index');
+})->name('admin.announcements');
+
+Route::get('/sms', function () {
+    return view('admin.sms.index');
+})->name('admin.sms');
+
+Route::get('/routes', function () {
+    return view('admin.routes.index');
+})->name('admin.routes');
+
+Route::get('/routes/view', function () {
+    return view('admin.routes.view');
+})->name('admin.routes.view');
+
 Route::get('/register', [RegisterController::class, 'showRegistrationForm'])->name('register');
 Route::post('/register', [RegisterController::class, 'register']);
 Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
