@@ -31,7 +31,12 @@
                             </div>
                             <div class="form-group">
                                 <label for="contact_no">Contact No. <span style="color: red;">*</span></label>
-                                <input type="number" class="form-control" value="{{ $user->contact_no }}" id="contact_no" name="contact_no" placeholder="Contact No." required>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span style="background-color: #ffffff;" class="input-group-text"><img src="{{ asset('images/ph-flag.jpg') }}" alt="PH Flag" style="height: 1em;"></span>
+                                    </div>
+                                    <input type="tel" class="form-control" id="contact_no" value="{{ $user->contact_no }}" name="contact_no" placeholder="Contact No." required>
+                                </div>
                             </div>
                             <div class="form-group">
                                 <label for="user_type">User Type <span style="color: red;">*</span></label>
@@ -102,5 +107,23 @@
                 $(this).toggleClass('mdi-eye mdi-eye-off');
             });
         });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+          var contactInput = document.getElementById("contact_no");
+          var prefix = "+63";
+
+          // Set the initial value of the input field
+          contactInput.value = prefix;
+
+          contactInput.addEventListener("input", function() {
+              var inputValue = contactInput.value.trim();
+
+              // If the user removes the prefix, add it back
+              if (!inputValue.startsWith(prefix)) {
+                  contactInput.value = prefix + inputValue;
+              }
+          });
+      });
     </script>
 @endsection

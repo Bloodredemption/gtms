@@ -69,7 +69,7 @@
           </div>
         </li>
         <li class="nav-item nav-profile dropdown">
-          <span class="mr-3">Ejaxx</span>
+          <span class="mr-3">EJ</span>
           <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="profileDropdown">
             <img src="{{ asset('images/faces/def_userimg.jpg') }}" alt="profile"/>
           </a>

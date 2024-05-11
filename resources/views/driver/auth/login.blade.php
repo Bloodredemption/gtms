@@ -36,7 +36,7 @@
                         <div class="brand-logo text-center">
                             <img src="{{ asset('images/logo.png') }}" alt="logo">
                         </div>
-                        <h4 class="text-center">Municipal Environment Natural Resources Office (MENRO)</h4>
+                        <h4 class="text-center">Municipal Environment Natural Resources Office</h4>
                         <h6 class="font-weight-light text-center">Login to continue.</h6>
                         @if ($errors->any())
                             <div class="alert alert-danger">
@@ -66,9 +66,9 @@
                             <div class="mt-3">
                                 <button type="submit" class="btn btn-block btn-success btn-lg font-weight-medium auth-form-btn">LOGIN</button>
                             </div>
-                            <!-- <div class="text-center mt-4 font-weight-light">
+                            <div class="text-center mt-4 font-weight-light">
                                 Don't have an account? Register<a href="/register" class="text-primary"> Here</a>
-                            </div> -->
+                            </div>
                         </form>
                     </div>
                 </div>

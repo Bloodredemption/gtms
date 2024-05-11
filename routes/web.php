@@ -20,7 +20,7 @@ Route::get('/', function () {
     return view('auth.login');
 });
 
-Route::get('/dashboard', function () {
+Route::get('/admin/dashboard', function () {
     return view('admin.dashboard');
 })->middleware('auth')->name('admin.dashboard');
 
@@ -62,6 +62,15 @@ Route::get('/routes', function () {
 Route::get('/routes/view', function () {
     return view('admin.routes.view');
 })->name('admin.routes.view');
+
+// Resident Routes
+Route::get('/resident/dashboard', function () {
+    return view('resident.dashboard');
+})->name('resident.dashboard');
+
+Route::get('/driver/dashboard', function () {
+    return view('driver.dashboard');
+})->name('driver.dashboard');
 
 Route::get('/register', [RegisterController::class, 'showRegistrationForm'])->name('register');
 Route::post('/register', [RegisterController::class, 'register']);

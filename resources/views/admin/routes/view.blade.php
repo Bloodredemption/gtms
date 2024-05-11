@@ -22,7 +22,8 @@
             <div class="col-md-12 grid-margin stretch-card">
                 <div class="card">
                     <div class="card-body">
-                        <div id="map" style="height: 400px;"></div>
+                        <!-- <div id="map" style="height: 400px;"></div> -->
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63096.11665191081!2d124.7660624249118!3d8.738246012731992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32ffe1cf2948ff3b%3A0x4d4873fe87748085!2sBalingasag%2C%20Misamis%20Oriental!5e0!3m2!1sen!2sph!4v1715412145232!5m2!1sen!2sph" width="1170" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         <div class="row mt-3">
                             <div class="col-md-6">
                                 <label for="latitude">Latitude:</label>

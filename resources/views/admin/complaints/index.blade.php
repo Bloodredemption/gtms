@@ -54,7 +54,7 @@
                                             <td>
                                                 <div class="badge badge-primary">Active</div>
                                             </td>
-                                            <td>May 11, 2024</td>
+                                            <td>May 11, 2024 | 9:30 am</td>
                                         </tbody>
                                     </table>
                                 </div>
